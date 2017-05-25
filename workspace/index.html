@@ -1,13 +1,9 @@
-<?php
-    session_start();
-    session_destroy();
-    
-?>
+
 <!DOCTYPE HTML>
 <html>
 	<head>
 		<meta charset="UTF-8"> 
-		<title>Semana Cultural Unimagdalena</title>
+		<title>SheduleLab</title>
 		<link href="vista/css/bootstrap.css" rel='stylesheet' type='text/css' />
 		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 		 <script src="vista/js/jquery.min.js"></script>
@@ -71,7 +67,8 @@
 				<!----start-top-nav---->
 				 <nav class="top-nav">
 					<ul class="top-nav">
-						<li class="page-scroll"><a href="#about" class="scroll">Laboratorios</a></li>
+						<li class="active"><a href="#home" class="scroll">Unimagdalena</a></li>
+						<li class="page-scroll"><a href="#about" class="scroll">Información</a></li>
 						<li class="page-scroll"><a href="#contact" class="scroll">IniciarSesión</a></li>
 					</ul>
 					<a href="#" id="pull"><img src="vista/images/nav-icon.png" title="menu" /></a>
@@ -121,7 +118,7 @@
 				<h4><p align="left">Para ver información detallada de los horarios dar clic en la siguiente imagen:</p></h4>
 				<br>
 				<div class="col-md-12 col-xs-12">
-					<a href="vista/usuario.html"><img src="vista/images/SCXVI2.jpg" title="Schedule Labs" width="1100" height="600" /></a>
+					<a href="vista/usuario.php"><img src="vista/images/SCXVI2.jpg" title="Schedule Labs" width="1100" height="600" /></a>
 				</div>
 			<!--start-about-grids-->
 			
@@ -183,7 +180,7 @@
 				<div class="contact-grids">
 				    
 				    
-			<div class="col-lg-6 col-sm-6 col-md-6 col-xs-6">
+			<div class="col-lg-7 col-sm-7 col-md-7 col-xs-7">
 				<h4>INICIAR SESION</h4>
                   <div class="form-group">
                     <label class="sr-only" for="nombre">Usuario</label>
@@ -197,24 +194,7 @@
                 <div id="iniciaSesion"></div>
             </div>
             
-            <div class="col-lg-6 col-sm-6 col-md-6 col-xs-6">
-            	<h4>REGISTRATE</h4>
-                  <div class="form-group">
-                    <label class="sr-only" for="ejemplo_email_2">Usuario</label>
-                    <input type="text" class="form-control" id="usuario" placeholder="Introduce tu identificacion">
-                  </div>
-                  <div class="form-group">
-                    <label class="sr-only" for="ejemplo_password_2">Contraseña</label>
-                    <input type="password" class="form-control" id="contrasena" placeholder="Introduce Contraseña">
-                  </div>
-                  <div class="form-group">
-                    <label class="sr-only" for="ejemplo_password_2">Confirma tu contraseña</label>
-                    <input type="password" class="form-control" id="contrasena2" placeholder="Introduce Contraseña">
-                  </div>
-                  <button type="button" class="btn btn-primary" id="registrar">Registrar</button>
-                <div id="iniciaSesion"></div>
-            </div>
-					
+            
 				
 
 		</div>
@@ -241,3 +221,4 @@
 	</body>	
 
 </html>
+
