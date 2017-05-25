@@ -1,0 +1,305 @@
+<?php
+session_start();
+if(isset($_SESSION['empleado'])){
+    $usuario = $_SESSION['empleado'];
+    
+     include '../modelo/conexion.php';
+     
+     $mostrar = new Conexion();
+
+?>
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+		<title>Usuario</title>
+		
+		<!-- Force IE to turn off past version compatibility mode and use current version mode -->
+		<meta http-equiv="X-UA-Compatible" content="IE=edge;chrome=1">
+		
+		<!-- Get the width of the users display-->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		
+		<!-- Text encoded as UTF-8 -->
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		  
+		<!-- icons -->
+		<link href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css" rel="stylesheet">
+				
+		<!-- bootstrap -->
+		<link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet" id="default">
+		
+		<!-- theme -->
+		<link href="https://netdna.bootstrapcdn.com/bootswatch/3.1.0/bootstrap/bootstrap.min.css" rel="stylesheet" title="theme">
+        <meta charset="UTF-8"> 
+        <title>Schedule Labs</title>
+        <link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
+        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+         <script src="js/jquery.min.js"></script>
+         <!---- start-smoth-scrolling---->
+        <script type="text/javascript" src="js/move-top.js"></script>
+        <script type="text/javascript" src="js/easing.js"></script>
+        <script type="text/javascript">
+            
+        </script>
+        <!---- start-smoth-scrolling---->
+         <!-- Custom Theme files -->
+        <link href="css/theme-style.css" rel='stylesheet' type='text/css' />
+         <!-- Custom Theme files -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script type="application/x-javascript"> 
+            addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+        </script>
+        <!----font-Awesome----->
+        
+    	<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries in IE8, IE9 -->
+		<!--[if lt IE 9]>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.6.2/html5shiv.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.3.0/respond.js"></script>
+		<![endif]-->
+	</head>
+<body>
+	
+<center>
+<table width="960px" id="TixManagementContent" class="TixManagementContent">
+<tbody>
+<tr>
+<td align="left">
+<div class="boxed-page">
+
+ <!-------->
+ <script>
+            $(function() {
+                var pull        = $('#pull');
+                    menu        = $('nav ul');
+                    menuHeight  = menu.height();
+                $(pull).on('click', function(e) {
+                    e.preventDefault();
+                    menu.slideToggle();
+                });
+                $(window).resize(function(){
+                    var w = $(window).width();
+                    if(w > 320 && menu.is(':hidden')) {
+                        menu.removeAttr('style');
+                    }
+                });
+            });
+        </script>
+
+        <script type="text/javascript" src="http://disemuchonet.blogcindario.com/ficheros/jquery-1-4-2-min.js"></script>
+
+        <script type="text/javascript">
+        //<![CDATA[
+        var j = jQuery.noConflict();
+        j(function (){
+        j(".esthela").hover(function(){
+        j(".esthela").stop(true, false).animate({right:"0"},"medium");
+        },function(){
+        j(".esthela").stop(true, false).animate({right:"-400"},"medium");
+        },500);
+        return false;
+        });
+        //]]>
+        </script>
+
+        <style type="text/css">
+        /*<![CDATA[*/
+        .esthela {
+        float:right;
+        width:450px;
+        height:350px;
+        background: url(http://u.jimdo.com/www21/o/s4e9df44a0ad8ccd8/img/i89f1a63f61ac63da/1340075377/std/image.png) no-repeat !important;
+        display:block;
+        right: -400px;
+        padding:0;
+        position:fixed;
+        top: 56px;
+        z-index:1002;
+        }
+        /*]]>*/
+        </style>
+
+        <!----//End-top-nav-script---->
+
+
+    
+        <!----//End-top-nav-script---->
+    </head>
+    <body>
+        <!----start-container------>
+        <!----start-header---->
+        <div id="home" class="header scroll">
+            <div class="container">
+                <!---- start-logo---->
+                <div class="logo">
+                    <br>
+                    <a href="../index.html"><img src="images/SCXVI.png" title="Blue agency" /></a>
+                </div>
+                <!---- //End-logo---->
+                <!----start-top-nav---->
+                 <nav class="top-nav">
+                    <ul class="top-nav">
+                        <li class="active"><a href="../index.html">Inicio</a></li>                 
+                    </ul>
+                    <a href="#" id="pull"><img src="images/nav-icon.png" title="menu" /></a>
+                </nav>
+                <div class="clearfix"> </div>
+                <!----//End-top-nav---->
+            </div>
+        </div>
+        
+        
+        <!--start-portfolio-->
+        <div id="about" class="about">
+            <div class="container">
+                <h2>PROGRAMACION</h2>
+            <!--start-portfolio-->
+                <div id="port" class="container portfolio-main">
+                        <HR>
+                        <script>
+
+                            function muestra_oculta(id){
+                                if (document.getElementById){ //se obtiene el id
+                                    var el = document.getElementById(id); //se define la variable "el" igual a nuestro div
+                                    el.style.display = (el.style.display == 'none') ? 'block' : 'none'; //damos un atributo display:none que oculta el div
+                                    }
+                                    }
+                                    window.onload = function(){/*hace que se cargue la función lo que predetermina que div estará oculto hasta llamar a la función nuevamente*/
+                                    muestra_oculta('ventana1');/* "contenido_a_mostrar" es el nombre de la etiqueta DIV que deseamos mostrar */
+
+
+                            
+                            }
+                        </script>
+                        
+                         
+                        <script type="text/javascript">
+
+                            function hideshow(which){
+                                if (!document.getElementById)
+                                    return
+                                if (which.style.display=="block")
+                                    which.style.display="none"
+                                else
+                                    which.style.display="block"
+                            }
+
+                        </script>
+                                                
+                        <a class="btn btn-inverse" style='cursor: pointer;' onclick="muestra_oculta('ventana1')"><h2>VER PROGRAMACION</h2></a>
+                        
+                        <div class="container" align="center" id="ventana1" name="ventana1" >
+                                
+                            <a class="btn btn-default" href="javascript:hideshow(document.getElementById('D05'))">ELECTRONICA ANALOGA Y DIGITAL</a>&emsp;&emsp;
+                            <a class="btn btn-default" href="javascript:hideshow(document.getElementById('D06'))">INSTRUMENTACION Y PROCESAMIENTO DE SEÑALES</a>&emsp;&emsp;<br><br><br><br>
+                            <br><br>
+                            <hr width="100%">
+                                <div class="col-xs-12 col-md-12" align="center" style="display: none" name="D05" id="D05">
+                                    <!-- Start evento -->
+
+                                    
+                                            <div id="portfoliolist">
+                                                <div class="portfolio app mix_all" data-cat="app" style="display: inline-block; opacity: 1;">
+                                                    <div class="portfolio-wrapper">     
+                                                        <div class="container">
+                                                            <nav class="navbar navbar-default" role="navigation">
+                                                                <!-- Brand and toggle get grouped for better mobile display -->
+                                                                <div class="navbar-header">
+                                                                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                                                                        <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span><span
+                                                                            class="icon-bar"></span><span class="icon-bar"></span>
+                                                                    </button>
+                                                                    <a class="navbar-brand" href="#">ELECTRONICA ANALOGA Y DIGITAL</a>
+                                                                </div>
+                                                                <!-- Collect the nav links, forms, and other content for toggling -->
+                                                                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                                                                </div>
+                                                                <!-- /.navbar-collapse -->
+                                                            </nav>
+                                                        </div>
+
+                                                        <table class="table table-condensed">
+                                                            <thead>
+                                                                <th>#</th>
+                                                                <th>Laboratorio</th>
+                                                                <th>Fecha</th>
+                                                                <th>Hora de Inicio</th>
+                                                                <th>Hora de Salida</th>
+                                                            </thead>
+                                                            <?php
+                                                                $mostrar->conectar();
+                                                                $mostrar->mostrar();
+                                                                $mostrar->cerrar();
+                                                            ?>
+                                                        </table><br><br>
+                                                    </div>
+                                                    
+                                                </div>      
+                                            </div>
+                                        <!-- End evento -->         
+                                        
+                                        
+                                </div>
+                                
+                                <div class="col-xs-12 col-md-12" align="center" style="display: none" name="D06" id="D06">
+                                    <!-- Start evento -->
+                                    
+                                            <div id="portfoliolist">
+                                                <div class="portfolio app mix_all" data-cat="app" style="display: inline-block; opacity: 1;">
+                                                    <div class="portfolio-wrapper">     
+                                                        <div class="container">
+                                                            <nav class="navbar navbar-default" role="navigation">
+                                                                <!-- Brand and toggle get grouped for better mobile display -->
+                                                                <div class="navbar-header">
+                                                                    
+                                                                    <a class="navbar-brand" href="#">INSTRUMENTACION Y PROCESAMIENTO DE SEÑALES </a>
+                                                                </div>
+                                                                
+                                                                <!-- /.navbar-collapse -->
+                                                            </nav>
+                                                        </div>
+
+                                                        <table class="table table-condensed">
+                                                            <thead>
+                                                                <th>#</th>
+                                                                <th>Laboratorio</th>
+                                                                <th>Fecha</th>
+                                                                <th>Hora de Inicio</th>
+                                                                <th>Hora de Salida</th>
+                                                            </thead>
+                                                            <?php
+                                                                $mostrar->conectar();
+                                                                $mostrar->mostrar();
+                                                                $mostrar->cerrar();
+                                                            ?>
+                                                        </table>
+                                                    </div>
+                                                     
+                                                </div>      
+                                            </div>
+                                        <!-- End evento -->         
+                                        
+                                        
+                                </div>
+
+                                
+                            <br><br>
+                            <hr width="100%">
+                            <br><br>
+                            
+                </div>
+
+        </div>
+        <div class="clearfix"> </div>
+        </div>  
+        <!-------->
+
+
+</body>
+</html>
+
+<?php
+}else{
+    echo 'NO estas autorizado para hacer esto...';
+}
+
+?>
